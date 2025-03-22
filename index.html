@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>google</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(black.png);
+        background-size: cover;
+    }
+    .main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .logo{
+        width: 400px;
+    }
+    .input{
+        background-color: white;
+        display: flex;
+        gap: 15px;
+        padding: 6px;
+        width: 690px;
+        align-items: center;
+        justify-content: start;
+
+        border-radius: 25px 25px 25px 25px;
+        box-shadow: 0 0 1px 0  black;
+        margin-top: 15px;
+      
+    }
+    .icons{
+        font-size: 20px;
+        margin-right: 5px;
+    }
+    .inputs{
+        border:none;
+        outline: none;
+        padding: 5px;
+        width: 80%;
+        font-size: 18px;
+
+    }
+   
+    .inputs::placeholder{
+        font-size: 18px;
+
+    }
+    .icons1{
+        margin-left: 8px;
+    }
+    .img1{
+        width: 50px;
+        border-radius: 50%;
+        margin-top: 15px;
+    }
+    img{
+        width: 100%;
+      
+    }
+    .cards{
+        display: flex;
+        gap: 15px;
+        margin-top: 25px;
+    }
+    .card:hover{
+        background: rgba( 255, 255, 255, 0.25 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 3px );
+        -webkit-backdrop-filter: blur( 3px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+    .dot{
+        opacity: 1;
+    }
+    }
+    .card{
+        width: 100px;
+        height: 120px;
+        border-radius: 15px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        transition: 0.4s all ease;
+        cursor: pointer;
+        align-items: center;
+        border: none;
+
+
+    }
+    .dot{
+        position: relative;
+        bottom: 90px;
+        left: 40px;
+        opacity: 0;
+      
+
+    }
+    .right{
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        font-size: 20px;
+        gap: 15px;
+        color: white;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+    }
+
+
+</style>
+
+
+
+   
+<body>
+
+
+
+
+
+
+<div class="container">
+    <div class="main">
+        
+        <img class="logo" src="google_logo.svg" alt="">
+   
+    <div class="input">
+        <i class="icons icons1 fa-solid fa-magnifying-glass"></i>
+        <form class="inputs" action="https://www.google.com/search">
+            <input type="text" class="inputs"  name="q" placeholder="Search google or url">
+        </form>
+        
+        <i class=" icons mic fa-solid fa-microphone"></i>
+        <i class=" icons fa-solid fa-camera"></i>
+    </div>
+
+    <div class="cards">
+        <div class="card">
+                <div class="img1">
+                    <img style="border-radius: 50%;" src="instagram.png" alt="">
+
+                </div>
+                <h3 style="color: white;">Instagram</h3>
+                <div style="color: white;" class="dot">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+        </div>
+        <div class="card">
+                <div class="img1">
+                    <img style="border-radius: 50%;" src="threads.jpg" alt="">
+
+                </div>
+                <h3 style="color: white;">Threads</h3>
+                <div style="color: white;" class="dot">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+        </div>
+        <div class="card">
+                <div class="img1">
+                    <img style="border-radius: 50%;" src="image.png" alt="">
+
+                </div>
+                <h3 style="color: white;">Youtube</h3>
+                <div style="color: white;" class="dot">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+        </div>
+        <div class="card">
+                <div class="img1">
+                    <img style="border-radius: 50%;" src="chat.jpg" alt="">
+
+                </div>
+                <h3 style="color: white;">Chatgpt</h3>
+                <div style="color: white;" class="dot">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+        </div>
+        <div class="card">
+                <div class="img1">
+                    <img style="border-radius: 50%;" src="in.jpg" alt="">
+
+                </div>
+                <h3 style="color: white;">linkedin</h3>
+                <div style="color: white;" class="dot">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+        </div>
+        
+       
+    </div>
+    <div class="right">
+        <p><a href="">gmail</a></p>
+        <p><a href="">images</a></p>
+            <div class="dots">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+                
+            </div>
+            <img style="height: 50px; width: 50px; border-radius: 50%;" src="bhuva.jpg" alt="">
+       </div>
+</div>
+</div>
+
+</body>
+</html>
